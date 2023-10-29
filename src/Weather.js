@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css"
 
+
 export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ready: false});
     function handleResponse(response) {
-        console.log(response.data);
         setWeatherData({
             ready: true,
             temperature: response.data.main.temp,
@@ -13,10 +13,9 @@ export default function Weather(props) {
             iconUrl: "https://png.pngtree.com/png-vector/20190826/ourlarge/pngtree-clear-sky-in-the-daytime-png-image_1699567.jpg", 
             humidity: response.data.main.humidity,
             city: response.data.name,
-            wind: response.data.wind.speed
-
-        });
-
+            wind: response.data.wind.speed  
+        }
+        );
     }
 
     if (weatherData.ready) {
@@ -60,13 +59,14 @@ export default function Weather(props) {
                 </div>
             </div>
         )
-    }else{
-        
+
+
+        } else {
     const apiKey = "e1df324e950e63ef3c14062f0d815344";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
     
-
+        
     return "loading...;"
 
     }
