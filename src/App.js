@@ -10,7 +10,7 @@ export default function App() {
     
       <Weather defaultCity="Lagos"/>
       <footer>
-        This project was coded by <a href="https://www.linkedin.com/in/rose-akintobi-5238b1103/">Rose Akintobi</a>  and is {" "}
+        This project was coded by <a href="https://www.linkedin.com/in/rose-akintobi-5238b1103/" rel="noreferrer" target="_blank">Rose Akintobi</a>  and is {" "}
       <a href="https://github.com/richierosecodes/my-react-weather-app" rel="noreferrer" target="_blank" >
         open-sourced on GitHub
         
