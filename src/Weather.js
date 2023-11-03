@@ -13,11 +13,12 @@ export default function Weather(props) {
             ready: true,
             temperature: response.data.main.temp,
             description: response.data.weather[0].description,
-            iconUrl: "https://png.pngtree.com/png-vector/20190826/ourlarge/pngtree-clear-sky-in-the-daytime-png-image_1699567.jpg", 
+            iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
             humidity: response.data.main.humidity,
             date: new Date(response.data.dt*1000),
             city: response.data.name,
             wind: response.data.wind.speed  
+            
         }
         );
     }
@@ -25,7 +26,7 @@ export default function Weather(props) {
     function search() {
         const apiKey = "e1df324e950e63ef3c14062f0d815344";
         let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
+        axios.get(apiUrl).then(handleResponse);
 
     }
 
