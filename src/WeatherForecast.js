@@ -4,10 +4,11 @@ import "./WeatherForecast.css";
 import axios from "axios";
 
 
-export default function WeatherForecast() {
+export default function WeatherForecast(props) {
     function handleResponse(response) {
-        
+        console.log(response.data);
     }
+
     let apiKey = "cf4b8d4et700d15264c45doca5caf311";
     let latitude = 38.71667;
     let longitude = -9.13333
@@ -18,15 +19,6 @@ export default function WeatherForecast() {
 
     return <div className="WeatherForecast">
         <div className="row">
-            <div className="col">
-                <div className="WeatherForecast-day">Thu</div>
-                <WeatherIcon code = "01d" size={36} />
-                <div className="WeatherForecast-temperatures">
-                    <span className="WeatherForecast-temperature-max">19°</span>
-                    <span className="WeatherForecast-temperature-min">10°</span>
-                </div>
-            </div>
-
             <div className="col">
                 <div className="WeatherForecast-day">Thu</div>
                 <WeatherIcon code = "01d" size={36} />
