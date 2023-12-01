@@ -24,6 +24,7 @@ export default function Weather(props) {
             city: response.data.city,
             wind: response.data.wind.speed, 
             
+            
         }
         );
     }
