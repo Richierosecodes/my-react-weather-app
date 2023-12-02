@@ -4,24 +4,24 @@ import ReactAnimatedWeather from "react-animated-weather";
 
 export default function WeatherIcon(props) {
     const codeMapping = {
-        "01d": "CLEAR_DAY",
-        "01n": "CLEAR_NIGHT",
-        "02n": "PARTLY_CLOUDY_DAY",
-        "02d": "PARTLY_CLOUDY_NIGHT",
-        "03d": "PARTLY_CLOUDY_DAY",
-        "03n": "PARTLY_CLOUDY_NIGHT",
-        "04d": "CLOUDY",
-        "04n": "CLOUDY",
-        "09d": "RAIN",
-        "09n": "RAIN",
-        "10d": "RAIN",
-        "10n": "RAIN",
-        "11d": "RAIN",
-        "11n": "RAIN",
-        "13d": "SNOW",
-        "13n": "SNOW",
-        "50d": "FOG",
-        "50n": "FOG"
+        "clear-sky-day": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png",
+        "clear-sky-night": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png",
+        "few-clouds-day": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png",
+        "few-clouds-night": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-night.png",
+        "scattered-clouds-day": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png",
+        "scattered-clouds-night": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png",
+        "broken-clouds-day": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png",
+        "broken-clouds-night": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png",
+        "shower-rain-day": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/shower-rain-day.png",
+        "shower-rain-night": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-night.png",
+        "rain-day": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png",
+        "rain-night": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-night.png",
+        "thunderstorm-day": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/thunderstorm-day.png",
+        "thunderstorm-night": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/thunderstorm-night.png",
+        "snow-day": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/snow-day.png",
+        "snow-night": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/snow-night.png",
+        "mist-day": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/mist-day.png",
+        "mist-night": "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/mist-night.png"
     };
 
 
